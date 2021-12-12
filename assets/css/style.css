@@ -1,0 +1,650 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main{
+
+}
+
+#header{
+    display: flex;
+    width: 100%;
+    height:40px ;
+    background-color: #038497;
+}
+#header-left{
+    width: 60%;
+    margin-left: 20%;
+}
+#header-left li{
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 5px;
+}
+#header-left li a,
+#header-right li a{
+    text-decoration: none;
+    color: rgb(235, 231, 231);
+}
+#languages-text,
+#social-text,
+#tour-text,
+#contact-text{
+    text-transform: uppercase ;
+    font-weight: 400;
+}
+#header-left_icon>i{
+    padding: 0 3px;
+}
+#header-right{
+   width: 40%;
+}
+#header-right li{
+    list-style: none;
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 5px;
+}
+
+#menu{
+    height: 78px;
+    display: flex;
+    margin-left: 400px;
+    background:white;
+}
+
+#menu-logo{
+
+}
+#menu-logo #menu-logo_img{
+    height: 40px;
+    margin-top: 18px;
+}
+#menu-list{
+    margin-left: 50px;
+    
+}
+#menu-list li{
+    display: inline-block;
+    position: relative;
+    list-style: none;
+    margin: 0 25px;
+    line-height: 78px;
+    
+}
+#menu-list li a{
+    text-decoration: none;
+    color: #666;
+    
+}
+#menu-list>li:last-child>a {
+    background-color:  #14B9D5;
+    border: 10px solid #14B9D5;
+    border-radius:30px ;
+    color: rgb(235, 231, 231);
+}
+
+#menu-list #menu-packages{
+    display: none;
+    position: absolute;
+    
+}
+#menu-list #menu-packages li{
+    display: block;
+    height:47px;
+    width: 190px;
+    border-bottom: 1px solid rgb(223, 221, 221);
+    line-height: 47px;
+    
+}
+#menu-list #menu-packages li a{
+    font-size: 100;
+}
+#menu-list li:hover>#menu-packages{
+    display:block ;
+    box-shadow: 0 2px 6px #ccc;
+    background-color: #fff;
+
+    
+}
+#menu-packages li:hover{
+    background-color: rgb(243, 241, 241);
+}
+#menu-packages::before,
+#menu-shop::before{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    content: "";
+    display: block;
+    /* background-color: red; */
+    top: -50px;
+    left: 0;
+}
+#menu-packages>li:nth-child(3)::before{
+    content: "";
+    border: 5px solid;
+    border-color: transparent transparent transparent #333 ;
+    position: absolute;
+    right: 5px;
+    top: 17px;
+}
+#menu-list #menu-shop{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+}
+#menu-list #menu-shop li{
+    display: block;
+    height:47px;
+    width: 190px;
+    border-bottom: 1px solid rgb(223, 221, 221);
+    line-height: 47px;
+
+}
+#menu-list li:hover #menu-shop{
+    display: block;
+    box-shadow: 0 2px 6px #ccc;
+}
+#menu-shop li:hover{
+    background-color: rgb(243, 241, 241);
+}
+#menu-packages_tour{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-left: 40px;
+    box-shadow: 0 2px 6px #ccc;
+    background-color: #fff;
+   
+}
+#menu-packages_tour::after{
+    content: "";
+    width: 40px;
+    height: 200px;
+    /* background-color: red; */
+    position: absolute;
+    top: 0;
+    left: -40px;
+}
+#menu-packages li:hover #menu-packages_tour {
+    display: block;
+}
+/* #menu-packages>li:nth-child(1){
+    position: relative;
+} */
+#menu-packages #menu-hot{
+    color: white;
+    background-color: rgb(243, 79, 50);
+    font-size: 10px;
+    font-weight: 100;
+    
+    border: 4px solid rgb(243, 79, 50);
+    border-radius: 8px;
+    position: relative;
+    right: -100px;
+    top: 0;    
+}
+#menu-button{
+
+}
+/* CSS thanh trượt */
+#slider{
+    position: relative;
+}
+#slider .slider-left{
+    position: absolute;
+    left: 20;
+    top: 50%;
+    font-size: 50px;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: none;
+}
+#slider .slider-right{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    font-size: 50px;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: none;
+    
+}
+
+.myslider{
+    display: none;
+    height: 750px;
+    width: 100%;
+}
+#fixed-phone{
+    text-align: center;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    color: crimson;
+    cursor: pointer;
+}
+#fixed-phone i{
+    font-size: 50px;
+    height: 60px;
+    width: 60px;
+    border-radius: 40px;
+    background-color: yellow;
+    line-height: 60px;
+    text-align: center;
+    color: crimson;
+}
+#content{
+
+}
+#content #content-header{
+    width: 1170px;
+    display: flex;
+    margin: auto;
+    
+    
+}
+#content-header_left-img>img{
+    width: 270px;
+    height: 365px;
+}
+#content-header_left-price .img-address img{
+    width: 100px;
+    height: 100px;
+}
+#content-header_left{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+#content-header_left-price{
+    /* display: flex; */
+}
+.img-address{
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: 32px;
+}
+.content-header_left-from{
+    margin-left: 20px;
+}
+.content-header_left-from h3{
+    background:  linear-gradient(to right, #14b9d5 0%, #0071a7 100%);
+    border-radius: 5px;
+    height: 30px;
+    width: 120px;
+    line-height: 30px;
+    text-align: center;
+    color: rgb(243, 241, 241);
+    font-weight: 400;
+    text-decoration: none;
+}
+.address-icon{
+    display: flex;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    margin-left: 2px;
+    color: #999;
+
+}
+.address-icon>p{
+margin-left: 4px;
+}
+.content-header_left-text{
+    margin-top: 3px;
+}
+#content-infor{
+    width: 1170px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+#content-infor div{
+    width: 200px;
+    height: 205px;
+}
+#content-infor div h1{
+    color: #444;
+    font-weight: 400;
+}
+#content-infor div p{
+    color: #999;
+}
+
+/* bảng chọn thông tin */
+#content-seclect-infor{
+    width: 100%;
+    height: 560px;
+    background-image: url("http://www.nicdarkthemes.com/themes/travel/wp/demo/summer-holiday/wp-content/uploads/sites/4/2018/11/para-2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 560px;
+}
+#content-select_table{
+    width: 1170px;
+    height: 252px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    flex-wrap: wrap;
+    background-color: rgb(243, 241, 241);
+}
+#content-select_table div{
+    width: 356px;
+    margin-top: 30px;
+}
+#content-select_table div p{
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 0.8;
+}
+#content-select_table div input{
+    margin-top: 40px;
+    height: 43px;
+    width: 100%;
+    border-radius: 20px;  
+    cursor: pointer;
+}
+#content-seclect-infor_text{
+    text-align: center;
+    padding-top: 120px;
+    margin-bottom: 30px;
+}
+#content-seclect-infor_text>p,
+#content-seclect-infor_text>h1{
+    color: rgb(243, 241, 241);
+    text-transform: uppercase;
+}
+.content-selection{
+    background-color: #e6e4e4;
+    margin-top: 20px;
+    height: 43px;
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #888;
+    -webkit-appearance: none;
+    border-color: #f1f1f1;
+    border-left: 15px solid #e6e4e4;
+}
+#content-read{
+    width: 1170px;
+    display: flex;
+    margin: auto;
+    margin-top: 60px;
+    height: 650px;
+}
+#content-read_blog{
+    width: calc(100%/3);
+    background-color: #14b9d5 ;
+    padding-top: 170px;
+    padding-left: 33px;
+} 
+#content-read_blog p,
+#content-read_blog h1,
+#content-read_blog span{
+    color: #ffffff;
+}
+#content-read_more{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#content-read_more .content-read{
+    width: calc(100%/2);
+    padding: 30px;
+    justify-content: space-around;
+}
+#content-read_more .content-read p{
+    color: #9a9a9a;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+#content-read_more .content-read h3{
+    font-weight: 800;
+    opacity: 0.8;
+}
+.content-read_box{
+    padding: 30px;
+    height: 100%;
+    border: 1px solid rgb(224, 224, 224);
+}
+.content-read_box a{
+    text-decoration: none;
+    background-color: #14b9d5;
+    border: 8px solid #14b9d5;
+    border-radius: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 14px;
+
+}
+
+/* backgrough số lượng */
+#content-number{
+    background-image: url("http://www.nicdarkthemes.com/themes/travel/wp/demo/summer-holiday/wp-content/uploads/sites/4/2018/11/para-5.jpg");
+    height: 260px;
+    margin-top: 60px;
+}
+#content-number_wrap{
+    width: 1170px;
+    margin: auto;  
+    display: flex;
+    justify-content: space-around;
+}
+.content-number_show{
+    width: 270px;
+    height: 60px;
+    display: flex;
+    padding-top: 100px;
+}
+.content-number_show span{
+    font-size: 60px;
+    color: #FFFFFF;
+    
+}
+.content-number_show div p{
+    height: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffffff;
+    padding-left: 13px;
+}
+
+/*thông tin our destinations  */
+#content-destinations{
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+#content-destinations_month{
+    width: calc(100%/3);
+    border: 1px solid #e4e2e2;
+    padding: 30px 20px;
+}
+#content-destinations_month:nth-child(2){
+    background-color: #14b9d5;
+    margin: 0 20px;
+
+}
+#content-destinations_month:nth-child(2)>#content-month div p,
+#content-destinations_month:nth-child(2)>#content-month div span{
+    color: #ffffff;
+}
+#content-destinations_month:nth-child(2)>#content-destinations_icon span{
+    color: #ffffff;
+}
+#content-month{
+    display: flex; 
+    border-bottom: 1px solid #e4e2e2;
+    margin-bottom: 20px;
+}
+#content-month>div{
+    margin-bottom: 15px;
+}
+#content-month>div p{
+    font-size: 60px;
+    color: #444444;
+}
+#content-month>div span{
+    font-size: 30px;
+    color: #444444;
+    font-weight: 600;
+}
+#content-month >span{
+    
+    height: 25px;
+    line-height: 25px;
+    background-color: #555555;
+    margin-left: 100px;
+    border-radius: 10px;
+    border-left: 6px solid #555555;
+    border-right: 6px solid #555555;
+    color: #ffffff;
+
+}
+#content-destinations_icon i{
+    color: #8fe58f;
+}
+#content-destinations_icon span{
+    color: #888888;
+    margin-left: 10px;
+   
+}
+#content-destinations_icon div{
+    margin-top: 12px;
+    margin-bottom: 30px;
+}
+#content-destinations_icon a{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: rgb(54, 54, 218);
+    color: #FFFFFF;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 14px;
+}
+/* kết thúc */
+#footer{
+    margin-top: 70px;
+    width: 100%;
+    height: 630px;
+    background-image: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/summer-holiday/wp-content/uploads/sites/4/2018/11/para-11.jpg?id=1897);
+}
+#footer #footer-header{
+    display: flex;
+    height: 210px;
+    width: 1170px;
+    margin: auto;
+    padding-top: 70px;
+}
+#footer #footer-header #footer-header_left{
+    width: calc(100%/2);
+    height: 110px;
+}
+#footer #footer-header #footer-header_left p,
+#footer #footer-header #footer-header_left h1{
+    color: #FFFFFF;
+    padding-left: 100px;
+}
+#footer #footer-header #footer-header_left p{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+#footer #footer-header #footer-header_left h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+#footer-header_right{
+    padding-top: 32px;
+    margin-left: 100px;
+    width: calc(100%/2);
+}
+#footer-header_right #email,
+#footer-header_right #submit
+{
+    padding: 10px 20px;
+    border-radius:20px ;
+}
+#footer-header_right #submit{
+    background-color: #14b9d5;
+    color: #ffffff;
+    border: 1px solid #14b9d5;
+    cursor: pointer;
+}
+#footer-header_right #email{
+    border:  1px solid #f1f1f1;
+    margin-right: 10px;
+}
+#footer-table{
+    display: flex;
+    width: 1170px;
+    height: 290px;
+    background-color: #ffffff;
+    margin: auto;
+}
+#footer-table_left img{
+    width: 150px;
+    margin-bottom: 20px;
+}
+#footer-table_left{
+    width: calc(100%/2);
+    padding: 30px 30px;
+}
+#footer-table_left p{
+    font-size: 18px;
+    font-weight: 400;
+    padding-right: 35px;
+    margin-bottom: 20px;
+}
+#footer-table_left i{
+    font-size: 25px;
+    color: #555555;
+    padding: 0 5px;
+}
+#footer-table_right{
+    width: calc(100%/2);
+    display: flex;
+    justify-content: space-between;
+}
+#footer-right_text{
+    width: calc(100%/3);
+    margin-top: 40px;
+}
+#footer-right_text h3{
+    margin-bottom: 30px;
+}
+#footer-right_text ul{
+    list-style: none;
+}
+#footer-right_text ul li{
+    margin-bottom: 10px;
+}
+#footer-right_text ul li i{
+    font-size: 10px;
+    color: #999999;
+}
+#footer-right_text ul li span{
+    color: #999999;
+}
+#footer_last{
+    display: flex;
+    width: 1170px;
+    height: 50px;
+    line-height: 50px;
+    color: #FFFFFF;
+    margin: auto;
+    background-color: rgb(16, 199, 199);
+    justify-content: space-around;
+    font-size: 12px;
+}
